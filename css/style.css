@@ -9,8 +9,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #0a2a59;
+  /*   background-color: #0a2a59; */
+  background: rgb(7, 7, 7);
   font-family: "Oswald", sans-serif;
+  /*   position: sticky;
+  top: 0;
+  z-index: 2; */
 }
 
 .logo {
@@ -24,8 +28,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #876796;
-  border-radius: 75px 1px;
+  /*   background-color: #876796;
+  border-radius: 75px 1px; */
   width: 40%;
   height: 4rem;
 }
@@ -59,6 +63,16 @@ nav {
   margin: 5px;
   transition: all 0.3s ease;
 }
+/* Under the nav */
+.home {
+  background: radial-gradient(#525252, #131313);
+}
+.showcase {
+  display: grid;
+  min-height: 82vh;
+  grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  grid-template-rows: 1fr 2fr 1fr;
+}
 
 /* Tablet Zone */
 @media screen and (max-width: 1024px) {
@@ -76,7 +90,8 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #0a2a59;
+    /*     background-color: #0a2a59; */
+    background: rgb(7, 7, 7);
     display: flex;
     flex-direction: column;
     align-items: center;
