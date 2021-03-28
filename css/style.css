@@ -40,12 +40,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  /*   background-color: #0a2a59; */
   background: rgb(7, 7, 7);
-
-  /*   position: sticky;
-  top: 0;
-  z-index: 2; */
 }
 
 .logo {
@@ -59,16 +54,9 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /*   background-color: #876796;
-  border-radius: 75px 1px; */
   width: 40%;
   height: 4rem;
 }
-
-/* .nav-links {
-  background-color: tomato;
-    height: 8vh;
-} */
 
 .nav-links li {
   list-style: none;
