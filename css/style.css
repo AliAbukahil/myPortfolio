@@ -80,7 +80,7 @@ nav {
   height: 3px;
   background-color: whitesmoke;
   margin: 5px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* the transition on the Click of the burger menu */
 }
 /* Under the nav */
 .home {
@@ -150,53 +150,60 @@ footer h1 {
 /*  */
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden; /* So that the Burger menu won't scroll to the right */
   }
   .nav-links {
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    /*     background-color: #0a2a59; */
     background: rgb(7, 7, 7);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transform: translateX(
+      100%
+    ); /* To move the burger container menu away of the screen to the right. */ /*  Transform 1 */
+    transition: transform 0.5s ease-in; /* The transition so it won't pop up suddenly "boom" */
   }
   .nav-links li {
     opacity: 0;
   }
   .burger {
-    display: block;
+    display: block; /* I took it from display hidden to block */
   }
 }
 
 .nav-active {
-  transform: translateX(0%);
+  transform: translateX(
+    0%
+  ); /* This transform takes transform 1 above and put it back to zero, so when I click on the burger the navigation should get the zero Transform*/
 }
+
 /* Animation */
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(50px); /* some movement to the nav */
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(
+      0px
+    ); /* and from 50px to 0px so it will slide smoothly */
   }
 }
 
+/*  The animation Section of the burger */
 .spin .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px); /* -5px the x and 6px on the y */
 }
 
 .spin .line2 {
-  opacity: 0;
+  opacity: 0; /* to get rid of the middle one onCLick opacity 0 */
 }
 
 .spin .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px); /* in line 3 the y is -6px */
 }
